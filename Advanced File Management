@@ -1,0 +1,14 @@
+Question title - Advanced File Management
+Question link - https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+Solution -
+mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx 
+cp report.docx report_backup.docx 
+mkdir old 
+mv draft.docx old/
+mv summary.docx final_summary.docx 
+cp final_summary.docx old/
+rm report_backup.docx
+
