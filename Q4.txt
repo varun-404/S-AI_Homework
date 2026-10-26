@@ -1,0 +1,22 @@
+Question 3
+Question title - Deployment Project Permissions
+Question link- https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+Solution- 
+chmod 700 deployment/app/server.py deployment/app/handler.py deployment/app/settings.py
+chmod 770 deployment/datasets
+chmod 770 deployment/datasets/train.csv deployment/datasets/test.csv
+chmod 644 deployment/docs/OVERVIEW.md
+chmod 755 deployment/bin/start.sh deployment/bin/stop.sh deployment/bin/healthcheck.sh
+
+Approach:
+
+1. First, I changed the permissions of "server.py", "handler.py", and "settings.py" to "700" using the `chmod` command. This allows only the owner to read, write, and execute these files.
+2. Next, I set the permissions of the "datasets" directory to "770", allowing the owner and group to read, write, and execute within the directory.
+3. I also changed the permissions of "train.csv" and "test.csv" to "770", giving the owner and group full access to these files.
+4. Then, I set the permissions of "OVERVIEW\.md" to "644", allowing the owner to read and write while others can only read the file.
+5. Finally, I changed the permissions of "start.sh", "stop.sh", and "healthcheck.sh" to "755", allowing the owner to read, write, and execute, while others can read and execute them.
+
+Result:
+
+The Python files have restricted access for the owner only. The "datasets" directory and its CSV files allow full access to the owner and group. The "OVERVIEW\.md" file is readable by everyone but writable only by the owner. The three shell scripts are executable by everyone, while only the owner can modify them.
