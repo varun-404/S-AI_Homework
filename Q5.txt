@@ -1,0 +1,22 @@
+Question 5
+Question title - Execute a Python Script Directly
+Question link- https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+Solution-
+which python3
+echo '#!/usr/bin/env python3' >> hello.py
+echo "print('Hello from Python')" >> hello.py
+chmod +x hello.py
+./hello.py
+
+Approach:
+
+1. First, I used the `which python3` command to find the location of the Python 3 interpreter on the system.
+2. Next, I added the shebang line `#!/usr/bin/env python3` to "hello.py" to specify that the script should run using Python 3.
+3. I added the statement `print('Hello from Python')` to the file using the `echo` command so that it displays a message when executed.
+4. Then, I used `chmod +x hello.py` to give the file executable permission.
+5. Finally, I ran the script using `./hello.py` to execute it directly from the current directory.
+
+Result:
+
+The "hello.py" file was created with a shebang line and a Python print statement. After making it executable, I ran the script directly, and it displayed "Hello from Python" in the terminal.
