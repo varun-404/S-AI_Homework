@@ -1,0 +1,29 @@
+Question 1
+Question title - Advanced File Management
+Question link - https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+Solution -
+mkdir project-files
+cd project-files
+touch report.docx summary.docx draft.docx 
+cp report.docx report_backup.docx 
+mkdir old 
+mv draft.docx old/
+mv summary.docx final_summary.docx 
+cp final_summary.docx old/
+rm report_backup.docx
+
+Approach:
+
+1. First, I created a directory named "project-files" using the `mkdir` command and entered it using `cd project-files`.
+2. Next, I created three empty files named "report.docx", "summary.docx", and "draft.docx" using the `touch` command.
+3. I copied "report.docx" to create a backup named "report_backup.docx" using the `cp` command.
+4. Then, I created a directory named "old" using the `mkdir` command to store older files.
+5. I moved "draft.docx" into the "old" directory using the `mv` command.
+6. Next, I renamed "summary.docx" to "final_summary.docx" using the `mv` command.
+7. I copied "final_summary.docx" into the "old" directory using the `cp` command.
+8. Finally, I deleted "report_backup.docx" using the `rm` command, keeping the original "report.docx" unchanged.
+
+Result:
+
+The "project-files" directory contains "report.docx", "final_summary.docx", and the "old" directory. The "old" directory contains "draft.docx" and a copy of "final_summary.docx". The file "report_backup.docx" has been deleted, while the original "report.docx" remains in the main directory.
