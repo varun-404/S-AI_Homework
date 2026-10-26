@@ -1,0 +1,26 @@
+#API-Service Directory Workflow
+#https://my.newtonschool.co/playground/code/5ypni48t3pzs
+
+cd api-service
+git init
+git add README.md
+git commit -m "Add documentation"
+git status
+git add server.js routes.js package.json
+git commit -m "Add server files"
+git status
+git log 
+
+Approach:
+1. First, I entered the "api-service" directory using the "cd" command and initialized a new Git repository using "git init".
+2. I staged "README.md" using "git add README.md" and committed it with the message "Add documentation".
+3. I used "git status" to check the current state of the repository.
+4. Next, I staged "server.js", "routes.js", and "package.json" using the "git add" command.
+5. I committed these files with the message "Add server files" using "git commit".
+6. I ran "git status" again to check whether any changes remained uncommitted.
+7. Finally, I used "git log" to view the commit history and verify the recorded commits.
+
+Result:
+The "api-service" directory was initialized as a Git repository. 
+The "README.md" file was committed with the message "Add documentation", and "server.js", "routes.js", and "package.json" were committed with the message "Add server files". 
+The "git status" command shows the repository's current state, while "git log" displays the commit history.
