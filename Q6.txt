@@ -1,0 +1,18 @@
+#Simplify the Compilation Process
+#https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+
+echo "gcc hello.c -o hello" >> build.sh
+chmod 777 build.sh
+./build.sh
+./hello
+
+Approach:
+1. First, I used the "echo" command with ">>" to add the compilation command gcc hello.c -o hello to the "build.sh" file.
+2. I used the "chmod" command to set the permissions of "build.sh" to "777", allowing everyone to read, write, and execute the file.
+3. I executed the "build.sh" script using "./build.sh" to compile the "hello.c" source file and generate an executable named "hello".
+4. Finally, I executed "./hello" to run the compiled program and display its output.
+
+Result:
+The "build.sh" file was created with the GCC compilation command and given "777" permissions. 
+Running the script compiles "hello.c" into an executable named "hello". 
+Executing "./hello" runs the compiled program and displays its output, depending on the code written in "hello.c"
